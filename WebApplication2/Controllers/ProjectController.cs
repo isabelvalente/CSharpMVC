@@ -90,7 +90,7 @@ namespace WebApplication2.Controllers
             else
             {
                 projectToEdit.Name = project.Name;
-                projectToEdit.Description = project.Description;
+                projectToEdit.RepositoryLink = project.RepositoryLink;
                 projectToEdit.Language = project.Language;
                 SaveCache();
 
