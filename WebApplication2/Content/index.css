@@ -1,0 +1,21 @@
+﻿.jumbo-text {
+    width: 63%;
+    height: 100%;
+}
+
+.jumbotron {
+    background-color: #333333;
+    color: white;
+    background-image: url("./Images/devices.png");
+    background-repeat: no-repeat;
+    background-size: auto 200px;
+    background-position-x: 720px;
+    background-position-y: center;
+}
+
+.custom-button a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
