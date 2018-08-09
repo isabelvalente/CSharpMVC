@@ -1,8 +1,29 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Projects Index";
 }
 
-<h2>Index</h2>
-<li>@Html.ActionLink("View Full Project List", "ProjectList", "Project")</li>
+<link rel="stylesheet" href="~/Content/ProjectIndex.css"/>
+
+<h2>Projects Index</h2>
+
+<div class="image-container">
+    <div class="row text-center">
+        <div class="col-md-4">
+            <img class="image img-circle img-responsive img-thumbnail" src="~/Content/Images/gamepad.png"/>
+            <h5>Solo Web-based Game project.</h5>
+        </div>
+        <div class="col-md-4">
+            <img class="image img-circle img-responsive img-thumbnail" src="~/Content/Images/webdev.png" />
+            <h5>Solo Web-based Game project.</h5>
+        </div>    
+        <div class="col-md-4">
+            <img class="image img-circle img-responsive img-thumbnail" src="~/Content/Images/testing.png" />
+            <h5>Solo Web-based Game project.</h5>
+        </div>    
+    </div>
+</div>
+
+
+<p>@Html.ActionLink("View Full Project List", "ProjectList", "Project")</p>
 
