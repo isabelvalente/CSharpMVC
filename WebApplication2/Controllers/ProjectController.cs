@@ -98,6 +98,35 @@ namespace WebApplication2.Controllers
             }
         }
 
+        public ActionResult DeleteProject(string id)
+        {
+            Project project = projects.FirstOrDefault(c => c.Id == id);
+            if (project == null)
+            {
+                return HttpNotFound();
+            }
+            else
+            {
+                return View(project);
+            }
+        }
+
+        [HttpPost]
+        [ActionName("DeleteProject")]
+        public ActionResult ConfirmDeleteProject(string id)
+        {
+            Project project = projects.FirstOrDefault(c => c.Id == id);
+            if (project == null)
+            {
+                return HttpNotFound();
+            }
+            else
+            {
+                projects.Remove(project);
+                return RedirectToAction("ProjectList");
+            }
+        }
+
         public ActionResult ProjectList()
         {
              return View(projects);
